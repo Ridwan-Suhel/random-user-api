@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "gender": "male",
+    "name": "Akash",
+    "contact": "013789791",
+    "address": "Dhaka",
+    "photoUrl": "https://cdn-icons-png.flaticon.com/512/64/64572.png"
+  },
+  {
+    "id": "2",
+    "gender": "Female",
+    "name": "Nupur",
+    "contact": "015789791",
+    "address": "Sylhet",
+    "photoUrl": "https://cdn-icons-png.flaticon.com/512/1144/1144709.png"
+  },
+  {
+    "id": "3",
+    "gender": "male",
+    "name": "Batash",
+    "contact": "019789791",
+    "address": "Mirpur",
+    "photoUrl": "https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
+  }
+]
