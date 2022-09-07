@@ -36,3 +36,13 @@ module.exports.updateUser = (req, res) => {
 
   res.send(newData);
 };
+
+// delete a random user
+module.exports.deleteUser = (req, res) => {
+  const { id } = req.params;
+  const filter = { _id: id };
+
+  data = data.filter((d) => d.id !== Number(id));
+
+  res.send(data);
+};
