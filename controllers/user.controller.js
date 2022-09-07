@@ -1,5 +1,5 @@
 // const fs = require("fs");
-const data = require("../public/data.json");
+let data = require("../public/data.json");
 // getAllUser list
 module.exports.getAllUser = (req, res) => {
   res.send(data);
@@ -11,6 +11,9 @@ module.exports.getRandmonUser = (req, res) => {
   res.send(randomUser);
 };
 
+// save a random user
 module.exports.saveUser = (req, res) => {
-  res.send("User Added");
+  const query = req.body;
+  data.push(query);
+  res.send(data);
 };
