@@ -17,3 +17,22 @@ module.exports.saveUser = (req, res) => {
   data.push(query);
   res.send(data);
 };
+
+// update a random user by its id
+module.exports.updateUser = (req, res) => {
+  const { id } = req.params;
+  console.log(id);
+  // const filter = { _id: id };
+
+  // console.log(newData);
+  let newData = data.find((d) => d.id == Number(id));
+
+  newData.id = id;
+  newData.name = req.body.name;
+  newData.gender = req.body.gender;
+  newData.contact = req.body.contact;
+  newData.address = req.body.address;
+  newData.photoUrl = req.body.photoUrl;
+
+  res.send(newData);
+};

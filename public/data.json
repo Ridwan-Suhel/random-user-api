@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "gender": "male",
     "name": "Akash",
     "contact": "013789791",
@@ -8,7 +8,7 @@
     "photoUrl": "https://cdn-icons-png.flaticon.com/512/64/64572.png"
   },
   {
-    "id": "2",
+    "id": 2,
     "gender": "Female",
     "name": "Nupur",
     "contact": "015789791",
@@ -16,7 +16,7 @@
     "photoUrl": "https://cdn-icons-png.flaticon.com/512/1144/1144709.png"
   },
   {
-    "id": "3",
+    "id": 3,
     "gender": "male",
     "name": "Batash",
     "contact": "019789791",
