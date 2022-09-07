@@ -1,15 +1,16 @@
-const fs = require("fs");
+// const fs = require("fs");
+const data = require("../public/data.json");
+// getAllUser list
 module.exports.getAllUser = (req, res) => {
-  fs.readFile("data.json", (err, data) => {
-    if (err) {
-      res.write("Failed to Read");
-      res.end();
-    } else {
-      res.write(data);
-      res.end();
-    }
-  });
+  res.send(data);
 };
+// get random user
+module.exports.getRandmonUser = (req, res) => {
+  const users = data;
+  const randomUser = users[Math.floor(Math.random() * users.length)];
+  res.send(randomUser);
+};
+
 module.exports.saveUser = (req, res) => {
   res.send("User Added");
 };
